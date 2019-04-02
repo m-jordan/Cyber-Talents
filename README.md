@@ -2,4 +2,4 @@ CyberTalents is a platform that ranks cyber security professionals across the gl
 
 https://cybertalents.com
 
-Using this to get into the habit of report writing.
+Getting into the habit of report writing.
