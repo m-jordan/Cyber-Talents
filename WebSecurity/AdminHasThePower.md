@@ -1,12 +1,12 @@
 #Cyber-Talents: Web Security 
 ### [Admin has the power](https://cybertalents.com/challenges/web/admin-has-the-power)
 
-> ![](Images/ChallengeDescription.png)
+> ![](Images-AdminHasThePower/ChallengeDescription.png)
 
 
 
 Website has simple [login portal](http://35.193.45.56/adminpower/).
->![](Images/login.png)
+>![](Images-AdminHasThePower/login.png)
 
 First, inspect html source code. On line 18:
 ```
@@ -14,17 +14,17 @@ First, inspect html source code. On line 18:
 ```
 
 Using these credentials, we get the following:
-> ![](Images/support.png) 
+> ![](Images-AdminHasThePower/support.png) 
 
 On Burp Suite, intercept and inspect POST.
 
 In cookie, we find the field **role**.
-> ![](Images/cookie.png)
+> ![](Images-AdminHasThePower/cookie.png)
 
 Edit the cookie in Burp Suite from support to admin, and forward.
 
 We are then returned the following:
-> ![](Images/admin.png)
+> ![](Images-AdminHasThePower/admin.png)
 
 We have discovered the secret flag: **hiadminyouhavethepower**
 
